@@ -2,28 +2,28 @@
 
 ## 📌 Overview
 
-This project explores the relationship between market sentiment and stock price movements using historical NIFTY 50 data. It combines financial data analysis, sentiment analysis, feature engineering, data visualization, and machine learning techniques to evaluate how sentiment influences market trends.
+This project investigates the relationship between market sentiment and NIFTY 50 price movements using historical stock market data and machine learning techniques. It integrates sentiment analysis with financial data to analyze trends, visualize correlations, and evaluate predictive models for stock price movement.
 
 ---
 
 ## 🎯 Objectives
 
-- Collect historical NIFTY 50 stock market data.
-- Generate sentiment scores for market analysis.
-- Preprocess and merge financial and sentiment datasets.
+- Collect historical NIFTY 50 market data.
+- Generate sentiment scores for financial analysis.
+- Preprocess and merge stock and sentiment datasets.
 - Perform Exploratory Data Analysis (EDA).
-- Build machine learning models to analyse price movement.
-- Visualize trends and correlations using graphs.
+- Analyze the relationship between sentiment and price movement.
+- Build and evaluate machine learning models.
 
 ---
 
 ## ✨ Features
 
-- Historical NIFTY 50 stock data analysis
-- Sentiment score integration
-- Data preprocessing and cleaning
-- Feature engineering
+- Historical NIFTY 50 data analysis
+- Sentiment score generation
+- Data preprocessing and feature engineering
 - Exploratory Data Analysis (EDA)
+- Correlation analysis
 - Data visualization
 - Linear Regression
 - Logistic Regression
@@ -33,33 +33,27 @@ This project explores the relationship between market sentiment and stock price 
 
 ## 🛠️ Tech Stack
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- yfinance
+**Python | Pandas | NumPy | Scikit-learn | Matplotlib | Seaborn | yfinance**
+
+---
+
+## 🤖 Machine Learning Models
+
+- Linear Regression
+- Logistic Regression
+- Random Forest Classifier
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 stock-market-sentiment-analysis/
 │
-├── data/
-│   ├── merged_data.csv
-│   ├── nifty_2017_to_now.csv
-│   └── sentiment_2017_to_now.csv
-│
 ├── graphs/
-│   ├── graph1.png
-│   ├── graph2.png
-│   ├── graph3.png
-│   ├── graph4.png
-│   └── graph5.png
-│
+├── merged_data.csv
+├── nifty_2017_to_now.csv
+├── sentiment_2017_to_now.csv
 ├── stock_full.py
 ├── sentiment.py
 ├── merge.py
@@ -77,44 +71,89 @@ stock-market-sentiment-analysis/
 
 ---
 
-## 📊 Workflow
+## 🔄 Project Workflow
 
-1. Collect historical NIFTY 50 stock data using **yfinance**.
-2. Generate market sentiment scores.
-3. Clean and preprocess the datasets.
-4. Merge stock market and sentiment data.
+1. Collect historical NIFTY 50 data using **yfinance**.
+2. Generate sentiment scores.
+3. Clean and preprocess datasets.
+4. Merge stock and sentiment datasets.
 5. Perform Exploratory Data Analysis (EDA).
-6. Visualize market trends and sentiment correlations.
-7. Train and evaluate machine learning models.
-8. Analyse the relationship between sentiment and stock price movement.
+6. Build machine learning models.
+7. Evaluate prediction performance.
+8. Visualize insights using graphs.
 
 ---
 
-## 🤖 Machine Learning Models
+# 📊 Project Visualizations
 
-- Linear Regression
-- Logistic Regression
-- Random Forest Classifier
+<h3 align="center">Market Trend Analysis</h3>
 
----
+<p align="center">
+  <img src="graphs/moving_averages.png" width="48%" alt="Moving Averages">
+  <img src="graphs/price_vs_sentiment.png" width="48%" alt="Price vs Sentiment">
+</p>
 
-## 📈 Visualizations
-
-The project includes visualizations such as:
-
-- Stock Price Trend
-- Sentiment Distribution
-- Correlation Heatmap
-- Price vs Sentiment Analysis
-- Model Performance Graphs
-
-Graph outputs are available in the **graphs/** folder.
+<p align="center">
+  <em>Moving Average Analysis</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>NIFTY Price vs Sentiment</em>
+</p>
 
 ---
 
-## 📌 Results
+<h3 align="center">Correlation Analysis</h3>
 
-The analysis demonstrates that market sentiment has a measurable influence on stock price movement. While sentiment alone cannot accurately predict future prices, combining sentiment with historical market data provides valuable insights for financial analysis and decision-making.
+<p align="center">
+  <img src="graphs/sentiment_correlation.png" width="48%" alt="Sentiment Correlation">
+  <img src="graphs/correlation_heatmap.png" width="48%" alt="Correlation Heatmap">
+</p>
+
+<p align="center">
+  <em>Scatter Plot Correlation</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Feature Correlation Heatmap</em>
+</p>
+
+---
+
+<h3 align="center">Trend Analysis</h3>
+
+<p align="center">
+  <img src="graphs/price_sentiment_trend.png" width="48%" alt="Trend">
+  <img src="graphs/rolling_correlation.png" width="48%" alt="Rolling Correlation">
+</p>
+
+<p align="center">
+  <em>Price & Sentiment Trend</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>30-Day Rolling Correlation</em>
+</p>
+
+---
+
+<h3 align="center">Machine Learning Models</h3>
+
+<p align="center">
+  <img src="graphs/linear_regression.png" width="48%" alt="Linear Regression">
+  <img src="graphs/logistic_regression_cm.png" width="48%" alt="Logistic Regression">
+</p>
+
+<p align="center">
+  <em>Linear Regression Prediction</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <em>Logistic Regression Confusion Matrix</em>
+</p>
+
+<p align="center">
+  <img src="graphs/random_forest_cm.png" width="55%" alt="Random Forest">
+</p>
+
+<p align="center">
+  <em>Random Forest Confusion Matrix</em>
+</p>
+
+## 📈 Results
+
+- Successfully integrated historical stock market data with sentiment scores.
+- Identified correlations between market sentiment and stock price movements.
+- Performed comprehensive data visualization and exploratory analysis.
+- Developed and evaluated Linear Regression, Logistic Regression, and Random Forest models for stock movement prediction.
 
 ---
 
@@ -122,18 +161,29 @@ The analysis demonstrates that market sentiment has a measurable influence on st
 
 - Real-time news sentiment analysis
 - Twitter/X sentiment integration
-- Transformer-based NLP models (BERT)
+- BERT-based sentiment analysis
 - LSTM-based stock price forecasting
-- Interactive dashboard using Power BI or Streamlit
+- Interactive dashboard using Streamlit or Power BI
 
 ---
 
 ## 📦 Requirements
 
-Install the required Python libraries:
+Install the required libraries:
 
 ```bash
 pip install -r requirements.txt
+```
+
+**requirements.txt**
+
+```text
+pandas
+numpy
+matplotlib
+seaborn
+scikit-learn
+yfinance
 ```
 
 ---
@@ -142,4 +192,8 @@ pip install -r requirements.txt
 
 **Noopur Saindane**
 
-GitHub: https://github.com/noopurr8
+- GitHub: https://github.com/noopurr8
+
+---
+
+## ⭐ If you found this project useful, consider giving it a star!
